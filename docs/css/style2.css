@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 1000px;
+}
+
+.contenido .proyect{
+    background-image: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;  
+    margin-bottom: 120px; 
+}
+
+.header {
+    background-color: #12203e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;        
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 1%;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    padding: 20px;
+    background-color: rgba(0, 0, 255, 0.199);
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+}
+
+.logo span {
+    color: aqua;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    position: relative;
+    float: left;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: rgba(0, 132, 255, 0.164);
+
+}
+
+.menu ul li i {
+    padding: 10px;
+    color: aqua;
+}
+
+.contenedor {
+    text-align: justify;
+}
+
+.contenedor .header {
+    border-radius: 5px;
+}
+
+.contenido .bienv {
+    font-size: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    width: 210px;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+main .site-title {
+    --opacidad-negro: 0.7;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)),
+            rgba(0, 0, 0, var(--opacidad-negro))),
+        url("../img/fts.jpg");
+    background-size: cover;
+    height: 91vh;
+    display: flex;        
+    justify-content: center;
+}
+
+header {
+    border-bottom: 5px solid aqua;
+  }
+
+main .site-title .site-background {
+    padding-top: 15rem;
+    text-align: center;
+    color: white;
+}
+
+main .site-title h1,
+h3 {
+    margin: 0.3rem;
+}
+
+.name{
+    padding: 30px;
+    font-size: 20px;
+}
+
+.name .linea{
+    background-color: aqua;
+    height: 4px;
+    width: 150px;
+}
+
+.conten {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.conten .card {
+    color: white;
+    height: auto;
+    width: 250px;
+    padding: 10px;    
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 20px;
+    background-color: rgb(54, 73, 73);
+    box-shadow: 10px 10px 10px red;
+}
+
+.contenedor .card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contenedor .card .parrafo {
+    color: black;
+}
+
+.contenedor .card .btn {
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px){
+    main .site-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;      
+        width: auto;  
+        height: auto;
+    }
+
+    .name h2{
+        display: flex;
+        justify-content: center;        
+    }
+
+    .name .linea{
+        display: flex;
+        align-items: center;
+        margin: 0px auto;
+        justify-content: center;
+    }
+}
