@@ -243,16 +243,17 @@ main .site-title .site-background {
 .footer .copy {
     display: flex;
     justify-content: right;
-    width: 95%;    
+    width:100%;   
+    padding: 5px; 
     gap: 20px;
     align-items: center;
 }
 
 .footer .redes {
-    padding: 20px;
+    padding: 40px;
     background-color: rgba(0, 0, 255, 0.199);
-    width: 100px;
-    border-radius: 5px;
+    width: 20%;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,17 +312,28 @@ main .site-title .site-background {
         padding: 15px;
         border-radius: 6px;
         margin: 0 auto;
+        margin-bottom: 20px;
     }
         
     .info h2{
+        margin-bottom: 10px;
+        gap: 10px;
+        display: flex;        
+        justify-content: center;
+    }
+
+    .info a{
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 10px;
     }
     
     .info {
         text-align: justify;    
-        width: 90%;
-        padding: 10px;
-    
+        width: 100%;
+        padding: 10px;    
     }
 
     .download-cv{
