@@ -150,30 +150,34 @@ main .site-title .site-background {
     height: 60%;
     padding: 15px;
     border-radius: 6px;
+    transform: scale(1.05);
+}
+
+.img:hover{
+    transform: scale(1.05);
 }
 
 .img img {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-
 }
 
 .nombre {
     color: aqua;
 }
 
-.info h2{
+.info h2 {
     margin-bottom: 10px;
 }
 
 .info {
-    text-align: justify;    
+    text-align: justify;
     width: 50%;
 
 }
 
-.download-cv{
+.download-cv {
     padding: 10px 20px;
     background-color: aqua;
     border: none;
@@ -184,12 +188,12 @@ main .site-title .site-background {
     font-family: 'Edu NSW ACT Foundation', cursive;
     font-family: 'Edu QLD Beginner', cursive;
     font-family: 'Edu VIC WA NT Beginner', cursive;
-  }
-  
-  .download-cv:hover{
+}
+
+.download-cv:hover {
     background-color: white;
     box-shadow: none;
-  }
+}
 
 .conten {
     position: relative;
@@ -211,11 +215,16 @@ main .site-title .site-background {
     border-radius: 20px;
     background-color: rgb(54, 73, 73);
     box-shadow: 10px 10px 10px red;
+    transition: transform .2s;    
+}
+
+.conten .card:hover{
+    transform: scale(1.05);
 }
 
 .contenedor .card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 
 .contenedor .card .parrafo {
@@ -236,15 +245,15 @@ main .site-title .site-background {
 
 .contenedor .footer {
     background-color: #12203e;
-    color: #fff;        
-    width: 100%;        
+    color: #fff;
+    width: 100%;
 }
 
 .footer .copy {
     display: flex;
     justify-content: right;
-    width:100%;   
-    padding: 5px; 
+    width: 100%;
+    padding: 5px;
     gap: 20px;
     align-items: center;
 }
@@ -261,21 +270,54 @@ main .site-title .site-background {
 }
 
 .footer .redes a {
-    text-decoration: none;    
+    text-decoration: none;
     margin: 10px;
     font-size: 28px;
 }
 
-.footer .redes .fa-facebook{
-    color:  #1877f2;
+.footer .redes .fa-facebook {
+    color: #1877f2;
 }
 
-.footer .redes .fa-whatsapp{
-    color:  #25d366;
+.footer .redes .fa-whatsapp {
+    color: #25d366;
 }
 
-.footer .redes .fa-twitter{
-    color:  #00acee;
+.footer .redes .fa-twitter {
+    color: #00acee;
+}
+
+@media screen and (max-width: 950px) {
+    .header {
+        display: block;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        position: static;
+    }
+    
+    .menu {
+        display: block;
+    }
+
+    .menu ul li {
+        position: static;
+        float: none;
+        display: inline-block;
+
+    }
+}
+
+
+@media screen and (max-width: 860px) {
+    .menu ul li {
+        text-align: center;
+        display: block;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -299,10 +341,10 @@ main .site-title .site-background {
         justify-content: center;
     }
 
-    .site-background{
+    .site-background {
         display: block;
-        margin: 0 auto;       
-        width: 100%;            
+        margin: 0 auto;
+        width: 100%;
     }
 
     .img {
@@ -314,32 +356,32 @@ main .site-title .site-background {
         margin: 0 auto;
         margin-bottom: 20px;
     }
-        
-    .info h2{
+
+    .info h2 {
         margin-bottom: 10px;
         gap: 10px;
-        display: flex;        
+        display: flex;
         justify-content: center;
     }
 
-    .info a{
+    .info a {
         display: flex;
         text-decoration: none;
         align-items: center;
         justify-content: center;
         margin-bottom: 10px;
     }
-    
+
     .info {
-        text-align: justify;    
+        text-align: justify;
         width: 100%;
-        padding: 10px;    
+        padding: 10px;
     }
 
-    .download-cv{
+    .download-cv {
         padding: 10px 20px;
         background-color: aqua;
-        border: none;        
+        border: none;
         border-radius: 15px;
         margin-top: 30px;
         cursor: pointer;
@@ -347,19 +389,19 @@ main .site-title .site-background {
         font-family: 'Edu NSW ACT Foundation', cursive;
         font-family: 'Edu QLD Beginner', cursive;
         font-family: 'Edu VIC WA NT Beginner', cursive;
-      }
-      
-      .download-cv:hover{
+    }
+
+    .download-cv:hover {
         background-color: white;
         box-shadow: none;
-      }
-    
-    .footer .copy{
+    }
+
+    .footer .copy {
         display: block;
         text-align: center;
     }
 
-    .footer .redes{
+    .footer .redes {
         width: auto;
     }
 }
