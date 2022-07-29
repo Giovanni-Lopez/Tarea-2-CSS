@@ -1,15 +1,23 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 1000px;
+    box-sizing: border-box;
 }
 
-.contenido .proyect{
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Edu+QLD+Beginner:wght@500&family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+body {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Edu QLD Beginner', cursive;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.contenido .proyect {
     background-image: url(../img/fondo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;      
+    width: 100%;
 }
 
 .header {
@@ -17,7 +25,7 @@
     color: #fff;
     display: flex;
     align-items: center;
-    margin: 0 auto;        
+    margin: 0 auto;
     top: 0;
     left: 0;
     right: 0;
@@ -31,9 +39,10 @@
     color: white;
     font-weight: bold;
     position: relative;
-    padding: 20px;
+    padding: 30px;
     background-color: rgba(0, 0, 255, 0.199);
-    width: 50px;
+    width: 100px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,35 +110,86 @@ main .site-title {
         url("../img/fts.jpg");
     background-size: cover;
     height: 91vh;
-    display: flex;        
+    display: flex;
     justify-content: center;
 }
 
 header {
     border-bottom: 5px solid aqua;
-  }
+}
 
 main .site-title .site-background {
-    padding-top: 15rem;
+    padding-top: 0rem;
+    margin-top: 0px;
     text-align: center;
     color: white;
 }
 
-main .site-title h1,
-h3 {
-    margin: 0.3rem;
-}
-
-.name{
+.name {
     padding: 30px;
     font-size: 20px;
 }
 
-.name .linea{
+.name .linea {
     background-color: aqua;
     height: 4px;
     width: 150px;
 }
+
+.site-background {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.img {
+    border: 2px solid aqua;
+    width: 24%;
+    height: 60%;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+.nombre {
+    color: aqua;
+}
+
+.info h2{
+    margin-bottom: 10px;
+}
+
+.info {
+    text-align: justify;    
+    width: 50%;
+
+}
+
+.download-cv{
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Edu QLD Beginner', cursive;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+  }
+  
+  .download-cv:hover{
+    background-color: white;
+    box-shadow: none;
+  }
 
 .conten {
     position: relative;
@@ -144,9 +204,10 @@ h3 {
     color: white;
     height: auto;
     width: 250px;
-    padding: 10px;    
+    padding: 10px;
     margin: 0 auto;
     margin-top: 15px;
+    margin-bottom: 50px;
     border-radius: 20px;
     background-color: rgb(54, 73, 73);
     box-shadow: 10px 10px 10px red;
@@ -173,24 +234,120 @@ h3 {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 768px){
-    main .site-title{
+.contenedor .footer {
+    background-color: #12203e;
+    color: #fff;        
+    width: 100%;        
+}
+
+.footer .copy {
+    display: flex;
+    justify-content: right;
+    width: 95%;    
+    gap: 20px;
+    align-items: center;
+}
+
+.footer .redes {
+    padding: 20px;
+    background-color: rgba(0, 0, 255, 0.199);
+    width: 100px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.footer .redes a {
+    text-decoration: none;    
+    margin: 10px;
+    font-size: 28px;
+}
+
+.footer .redes .fa-facebook{
+    color:  #1877f2;
+}
+
+.footer .redes .fa-whatsapp{
+    color:  #25d366;
+}
+
+.footer .redes .fa-twitter{
+    color:  #00acee;
+}
+
+@media screen and (max-width: 768px) {
+    main .site-title {
         display: flex;
         align-items: center;
-        justify-content: center;      
-        width: auto;  
+        justify-content: center;
+        width: auto;
         height: auto;
     }
 
-    .name h2{
+    .name h2 {
         display: flex;
-        justify-content: center;        
+        justify-content: center;
     }
 
-    .name .linea{
+    .name .linea {
         display: flex;
         align-items: center;
         margin: 0px auto;
         justify-content: center;
+    }
+
+    .site-background{
+        display: block;
+        margin: 0 auto;       
+        width: 100%;            
+    }
+
+    .img {
+        border: 2px solid aqua;
+        width: 50%;
+        height: 60%;
+        padding: 15px;
+        border-radius: 6px;
+        margin: 0 auto;
+    }
+        
+    .info h2{
+        margin-bottom: 10px;
+    }
+    
+    .info {
+        text-align: justify;    
+        width: 90%;
+        padding: 10px;
+    
+    }
+
+    .download-cv{
+        padding: 10px 20px;
+        background-color: aqua;
+        border: none;        
+        border-radius: 15px;
+        margin-top: 30px;
+        cursor: pointer;
+        box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+        font-family: 'Edu NSW ACT Foundation', cursive;
+        font-family: 'Edu QLD Beginner', cursive;
+        font-family: 'Edu VIC WA NT Beginner', cursive;
+      }
+      
+      .download-cv:hover{
+        background-color: white;
+        box-shadow: none;
+      }
+    
+    .footer .copy{
+        display: block;
+        text-align: center;
+    }
+
+    .footer .redes{
+        width: auto;
     }
 }
