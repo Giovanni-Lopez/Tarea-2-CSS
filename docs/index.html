@@ -1,159 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="https://kit.fontawesome.com/305a21787b.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/305a21787b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portafolio Web</title>
 </head>
+
 <body>
 
-  <div class="wrapper">
-    <header>
-      <nav class="navbar">
-        <div class="brand">
-          <h2>G<span>L</span></h2>
+    <header class="header">
+        <div class="logo">
+            G<span>L</span>
         </div>
-        <ul class="menu">
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Portafolio</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+        <nav class="menu">
+            <ul>
+                <li><a href=""><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li><a href="paginas/proyectos.html" target="_blank"><i class="fa-brands fa-buffer"></i>Proyectos</a></li>
+                <li><a href="paginas/somos.html" target="_blank"><i class="fa-solid fa-user-tie"></i>Quienes somos</a></li>
+                <li><a href="paginas/ubicacion.html" target="_blank"><i class="fa-solid fa-location-dot"></i>Ubicación</a></li>
+                <li><a href="paginas/contactanos.html" target="_blank"><i class="fa-solid fa-envelope"></i>Contáctame</a></li>
+            </ul>
+        </nav>
     </header>
+    <span class="linea"></span>
+    <div class="contenedor">
+        <main class="contenido">
 
-    <main class="main">
-      <div class="info-content">
-        <h1>I'm <span>John </span>Carter</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas quas eos dignissimos quidem qui iste, dolor, nulla fugit tempora reprehenderit, tempore facere beatae quibusdam voluptatem id dolores pariatur totam harum?
-        </p>
-        <a download="" href="#">
-          <button class="download-cv" >Download CV</button>
-        </a>
-      </div>
-      <img src="img/pexels-photo-1516680-removebg-preview.png" alt="John Carter Picture">
-    </main>
-  </div>
+            <section class="site-title">
+                <div class="site-background">
 
-  <div class="about">
-    <img src="img/about.png" alt="Imagen about">      
+                    <div class="info">
+                        <h2>Soy<span class="nombre"> Giovanni </span> Lopez</h2>
+                        <p>
+                            Me gusta la programacion, soy apacionado por las nuevas herramientas de desarrollo web y
+                            movil, me gusta seguir aprendiendo cosas nuevas para mi formacion profesional, tengo
+                            conocimientos basicos que algunos lenguajes de programacion movil y web que me están ayudando a
+                            seguir practicando y aprendiendo en este mundo de desarrollo.
+                        </p>
+                        <a class="btn" download="" href="cv/curriculum.pdf">
+                            <button class="download-cv">Download CV</button>
+                        </a>
+                    </div>
+                    <div class="img">
+                        <img src="img/foto-currículum.JPG" alt="">
+                    </div>
+                </div>
+            </section>
 
-    <div class="about-info">
-      <h2>About me</h2>
-      <div class="divider"></div>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut libero illo architecto quas consequuntur doloremque fugit? Molestiae dignissimos excepturi perferendis voluptatum debitis, numquam distinctio doloribus cumque iure nisi reprehenderit quisquam.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ea mollitia porro animi, consequatur necessitatibus eveniet hic harum aut excepturi, dignissimos amet, earum delectus cupiditate. Aliquid dolore tempore non illo?</p>
-      <button class="download-cv">Read more</button>
-    </div>  
-  </div>
+            <section>
 
-<div class="portfolio">
-  <div class="portfolio-headings">
-    <h2>My Portfolio</h2>
-    <div class="divider"></div>    
-  </div>
+                <div class="proyect">
+                    <div class="name">
+                        <h2>Mis Proyectos</h2>
+                        <div class="linea"></div>
+                    </div>
+                    <div class="conten">
+                        <div class="card">
+                            <img src="img/proyecfinal.png" alt="">
+                            <h4>Evaluacion Final CSS</h4>                        
 
-  <div class="container">
-    <div class="card">
-      <div class="card__img"></div>
-      <div class="card__title">
-        <h2>Project Description</h2>        
-      </div>
-      <div class="card__projects-links">
-        <a href="">
-          <i class="fa-brands fa-github"></i>
-        </a>
+                            <a class="btn" href="https://giovanni-lopez.github.io/Evaluacion-Final-CSS/" target="_blank"><i class="fa-solid fa-eye"></i>&nbsp;&nbsp;Ver</a>
+                        </div>
 
-        <a href="">
-          <i class="fa-solid fa-earth-americas"></i>
-        </a>
-      </div>  
+                        <div class="card">
+                            <img src="img/tarea1css.png" alt="">
+                            <h4>Tarea 1 CSS</h4>                        
+                            <a class="btn" href="https://giovanni-lopez.github.io/Tarea-1-CSS/" target="_blank"><i class="fa-solid fa-eye"></i>&nbsp;&nbsp;Ver</a>
+                        </div>
 
-      <div class="project-detailds-content">
-        <button class="project-details download-cv">
-        <a href="">
-           Project Details
-        </a>       
-      </button>
-      </div>      
+                        <div class="card">
+                            <img src="img/evaluacioncss.png" alt="">
+                            <h4>Evaluacion CSS</h4>                        
+
+                            <a class="btn" href="https://giovanni-lopez.github.io/Evaluacion-css/" target="_blank"><i class="fa-solid fa-eye"></i>&nbsp;&nbsp;Ver</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>   
+        
+        <footer class="footer">
+            <div class="copy">
+                <h4><i class="fa-regular fa-copyright"></i> COPYRIGHT</h4>
+                <div class="redes">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <div class="card">
-      <div class="card__img"></div>
-      <div class="card__title">
-        <h2>Project Description</h2>        
-      </div>
-      <div class="card__projects-links">
-        <a href="">
-          <i class="fa-brands fa-github"></i>
-        </a>
-
-        <a href="">
-          <i class="fa-solid fa-earth-americas"></i>
-        </a>
-      </div>
-
-      <div class="project-detailds-content">
-        <button class="project-details download-cv">
-        <a href="">
-           Project Details
-        </a>       
-      </button>
-      </div>      
-    </div>
-
-    <div class="card">
-      <div class="card__img"></div>
-      <div class="card__title">
-        <h2>Project Description</h2>        
-      </div>
-      <div class="card__projects-links">
-        <a href="">
-          <i class="fa-brands fa-github"></i>
-        </a>
-
-        <a href="">
-          <i class="fa-solid fa-earth-americas"></i>
-        </a>
-      </div>
-
-      <div class="project-detailds-content">
-        <button class="project-details download-cv">
-        <a href="">
-           Project Details
-        </a>       
-      </button>
-      </div>      
-    </div>
-  </div>
-</div>
-
-<div class="contact-section">
-  <div class="contact-headings">
-    <h2>Keep in touch</h2>
-    <div class="divider"></div>
-  </div>
-
-  <div class="container-contact">
-    <img src="img/img-opacity50.png" alt="Imagen de ejemplo">
-
-    <div class="contact-form">
-      <h4>Send mea message...</h4>
-      <form class="form">
-        <input type="text" name="nombre" placeholder="Nombre">
-        <input type="email" name="correo" placeholder="Email">
-        <textarea name="message" placeholder="Place your message" cols="30" rows="10">          
-        </textarea>
-
-        <button class="btn-submit">Send message</button>
-      </form>
-    </div>
-  </div>
-</div>
-
+    
 </body>
 </html>
