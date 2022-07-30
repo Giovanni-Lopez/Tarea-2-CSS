@@ -601,3 +601,22 @@ main .site-title .site-background {
         text-align: center;
     }   
 }
+
+/* media mi proyectos */
+@media screen and (max-width: 768px){
+    .footerPagina{
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 100%;        
+    }
+
+    .footerPagina .copy {
+        display: block;
+        text-align: center;
+    }
+
+    .footerPagina .redes {
+        width: auto;
+    }
+}
