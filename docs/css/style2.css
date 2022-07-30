@@ -153,7 +153,7 @@ main .site-title .site-background {
     transform: scale(1.05);
 }
 
-.img:hover{
+.img:hover {
     transform: scale(1.05);
 }
 
@@ -213,18 +213,22 @@ main .site-title .site-background {
     margin-top: 15px;
     margin-bottom: 50px;
     border-radius: 20px;
-    background-color: rgb(54, 73, 73);
-    box-shadow: 10px 10px 10px red;
-    transition: transform .2s;    
+    background-color: rgb(170, 179, 179);
+    box-shadow: 10px 10px 10px #12203e;
+    transition: transform .2s;
+    display: flex;
+    Flex-flow: column;
 }
 
-.conten .card:hover{
+.conten .card:hover {
+    box-shadow: 10px 10px 10px blue;
     transform: scale(1.05);
 }
 
 .contenedor .card img {
     width: 100%;
-    border-radius: 10px;    
+    height: 65%;
+    border-radius: 10px;
 }
 
 .contenedor .card .parrafo {
@@ -237,16 +241,68 @@ main .site-title .site-background {
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
-    background-color: purple;
+    background-color: #12203e;
     color: white;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: auto;
+
+}
+
+.contenedor .card .btn:hover {
+    background-color: blue;
+    color: white;
 }
 
 .contenedor .footer {
     background-color: #12203e;
     color: #fff;
+    width: 100%;    
+}
+
+.footerPagina{
+    background-color: #12203e;
+    color: #fff;
     width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footerPagina .copy {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    padding: 5px;
+    gap: 20px;
+    align-items: center;    
+}
+
+.footerPagina .redes {
+    padding: 40px;
+    background-color: rgba(0, 0, 255, 0.199);
+    width: 20%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.footerPagina .redes a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 28px;
+}
+
+.footerPagina .redes .fa-facebook {
+    color: #1877f2;
+}
+
+.footerPagina .redes .fa-whatsapp {
+    color: #25d366;
+}
+
+.footerPagina .redes .fa-twitter {
+    color: #00acee;
 }
 
 .footer .copy {
@@ -255,7 +311,7 @@ main .site-title .site-background {
     width: 100%;
     padding: 5px;
     gap: 20px;
-    align-items: center;
+    align-items: center;    
 }
 
 .footer .redes {
@@ -299,7 +355,7 @@ main .site-title .site-background {
         text-align: center;
         position: static;
     }
-    
+
     .menu {
         display: block;
     }
@@ -403,5 +459,110 @@ main .site-title .site-background {
 
     .footer .redes {
         width: auto;
+    }
+}
+
+/* Pagina Quienes Somos */
+.section {
+    width: 60%;
+    height: auto;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgb(213, 218, 218);
+    box-shadow: 7px 7px 7px blue;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mision {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        text-align: center;
+    }
+}
+
+/* Pagina Ubicacion */
+.section .map iframe {
+    height: 300px;
+    width: 100%;
+}
+
+/* Pagina de contactanos */
+.sectForm {
+    width: 30%;
+    height: auto;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgb(213, 218, 218);
+    box-shadow: 7px 7px 7px blue;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sectForm h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.imgContact {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid;
+}
+
+.imgContact h2 {
+    width: 100%;
+}
+
+.general {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    width: auto;
+
+}
+
+.general input {
+    margin-top: 10px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.general input:hover {
+    border: 2px solid blue;
+}
+
+.general textarea {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+}
+
+.general button {
+    border: none;
+    border-radius: 7px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.general textarea:hover {
+    border: 2px solid blue;
+}
+
+@media screen and (max-width: 768px) {
+    .sectForm {
+        width: 70%;
+        text-align: center;
     }
 }
